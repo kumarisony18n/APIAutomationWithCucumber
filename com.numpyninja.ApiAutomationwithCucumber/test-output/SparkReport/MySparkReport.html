@@ -1,0 +1,1783 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title></title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary"></span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Mar 31, 2022 01:06:00 AM</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@Delete</a><a class="dropdown-item" href="#">@Put</a><a class="dropdown-item" href="#">@Get</a><a class="dropdown-item" href="#">@Post</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="pass" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check the Get request to fetch all UserSkillMapGetApi data</p>
+            <p class="text-sm">
+              <span>1:06:02 AM</span> / <span>00:00:10:314</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check the Get request to fetch all UserSkillMapGetApi data</h5>
+<span class='badge badge-success'>03.31.2022 1:06:02 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:12 AM</span>
+<span class='badge badge-default'>00:00:10:314</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch List of all users with all skill details</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.lms_api_is_up_and_running_for_authorized_user()">
+                <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserSkillMapGetApi.user_sends_get_request_to_fetch_list_of_all_users_with_all_skill_details_with_endpoint_as(java.lang.String)">
+                <span>When User sends Get request to fetch List of all users with all skill details with endpoint as "/UserSkillsMap"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserSkillMapGetApi.api_should_return_list_of_all_users_with_all_skill_details_with_success_status_code()">
+                <span>Then API should return List of all users with all skill details with success status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch List of user with the skill details by USER_ID</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="9"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch List of user with the skill details by USER_ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Get request to fetch List of user with the skill details by USER_ID with endpoint as "/UserSkillsMap/{id}" from given sheetname "GetByUserid" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then API should return List of user with the skill details by USER_ID with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="15"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch List of all users details by SKILL_ID</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch List of all users details by SKILL_ID</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Get request to fetch List of all users details by SKILL_ID with endpoint as "/UsersSkillsMap/{id}" from given sheetname "GetBySkillId" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then API should return List of all users details by SKILL_ID with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="22"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Delete request to delete an existing Skill detail</p>
+            <p class="text-sm">
+              <span>1:06:12 AM</span> / <span>00:00:01:388</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Delete request to delete an existing Skill detail</h5>
+<span class='badge badge-success'>03.31.2022 1:06:12 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:14 AM</span>
+<span class='badge badge-default'>00:00:01:388</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=22</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log pass-bg mr-2">Pass</span>Delete request to delete existing skill with valid input</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="24"><span class="badge log pass-bg mr-2">Pass</span>Delete request to delete existing skill with valid input</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Delete request to SkillApi with valid input and endpoints as "/Skills/{id}" from given sheetname "Delete" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then skill record is successfully deleted with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="30"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check the Get request to fetch all skill data</p>
+            <p class="text-sm">
+              <span>1:06:14 AM</span> / <span>00:00:01:416</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check the Get request to fetch all skill data</h5>
+<span class='badge badge-success'>03.31.2022 1:06:14 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:15 AM</span>
+<span class='badge badge-default'>00:00:01:416</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=30</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="31"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch all skill data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.lms_api_is_up_and_running_for_authorized_user()">
+                <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.SkillApiSteps.user_sends_get_request_to_fetch_all_skill_data_with_endpoint_as(java.lang.String)">
+                <span>When User sends Get request to fetch all skill data with endpoint as "/Skills"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.SkillApiSteps.api_should_return_all_skill_data_with_success_status_code()">
+                <span>Then API should return all skill data with success status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="37"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch specific skill data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="38"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch specific skill data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Get request to fetch specific skill data with endpoint as "/Skills/{id}" from given sheetname "Get" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then API should return record for specific skill with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="44"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Post request for Skill API</p>
+            <p class="text-sm">
+              <span>1:06:15 AM</span> / <span>00:00:01:983</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Post request for Skill API</h5>
+<span class='badge badge-success'>03.31.2022 1:06:15 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:17 AM</span>
+<span class='badge badge-default'>00:00:01:983</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=44</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="45"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new Skill</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new Skill</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Post request with valid inputs from given sheetname "Post" and rownumber 0 and and endpoints as "/Skills"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then New skill record is successfully created with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="52"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new Skill</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Post request with valid inputs from given sheetname "Post" and rownumber 1 and and endpoints as "/Skills"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then New skill record is successfully created with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="58"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Put request for existing skill details</p>
+            <p class="text-sm">
+              <span>1:06:17 AM</span> / <span>00:00:02:743</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Put request for existing skill details</h5>
+<span class='badge badge-success'>03.31.2022 1:06:17 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:20 AM</span>
+<span class='badge badge-default'>00:00:02:743</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=58</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing skill details with valid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="60"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing skill details with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Put request for Skill Api with endpoint as "/Skills/{id}" and from given sheetname "Put" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Skill record is successfully updated with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="66"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing skill details with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Put request for Skill Api with endpoint as "/Skills/{id}" and from given sheetname "Put" and rownumber 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then Skill record is successfully updated with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="72"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Delete request to delete an existing user detail</p>
+            <p class="text-sm">
+              <span>1:06:20 AM</span> / <span>00:00:00:561</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Delete request to delete an existing user detail</h5>
+<span class='badge badge-success'>03.31.2022 1:06:20 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:20 AM</span>
+<span class='badge badge-default'>00:00:00:561</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=72</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="73"><span class="badge log pass-bg mr-2">Pass</span>Delete request to delete existing user with valid input</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="74"><span class="badge log pass-bg mr-2">Pass</span>Delete request to delete existing user with valid input</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Delete request with valid input and endpoints as "/Users/{id}" from given sheetname "Delete" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then user record is successfully deleted with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="80"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Get Request for User API</p>
+            <p class="text-sm">
+              <span>1:06:20 AM</span> / <span>00:00:00:934</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Get Request for User API</h5>
+<span class='badge badge-success'>03.31.2022 1:06:20 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:21 AM</span>
+<span class='badge badge-default'>00:00:00:934</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=80</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="81"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch all Users data</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.lms_api_is_up_and_running_for_authorized_user()">
+                <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.user_sends_get_request_with_endpoint_as(java.lang.String)">
+                <span>When User sends Get request with endpoint as "/Users"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.api_should_return_all_users_data_with_success_status_code()">
+                <span>Then API should return all users data with success status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="87"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch specific User data</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="88"><span class="badge log pass-bg mr-2">Pass</span>Get request to fetch specific User data</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Get request to fetch specific user with endpoint as "/Users/{id}" from given sheetname "Get" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then API should return data for specific user with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="94"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Post request for User API</p>
+            <p class="text-sm">
+              <span>1:06:21 AM</span> / <span>00:00:01:736</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Post request for User API</h5>
+<span class='badge badge-success'>03.31.2022 1:06:21 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:23 AM</span>
+<span class='badge badge-default'>00:00:01:736</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=94</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="95"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new User</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="96"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new User</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Post request with valid inputs from given sheetname "Post" and rownumber 0 and endpoints as "/Users"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then New user record is successfully created with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="102"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new User</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Post request with valid inputs from given sheetname "Post" and rownumber 1 and endpoints as "/Users"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then New user record is successfully created with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="108"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Check Put request for existing User details</p>
+            <p class="text-sm">
+              <span>1:06:23 AM</span> / <span>00:00:06:718</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Check Put request for existing User details</h5>
+<span class='badge badge-success'>03.31.2022 1:06:23 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:30 AM</span>
+<span class='badge badge-default'>00:00:06:718</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=108</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="109"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing User details with valid inputs</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="110"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing User details with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Put request with endpoint as "/Users/{id}" and from given sheetname "Put" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User record is successfully updated with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="116"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing User details with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends Put request with endpoint as "/Users/{id}" and from given sheetname "Put" and rownumber 1</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then User record is successfully updated with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="153"><span class="badge log pass-bg mr-2">Pass</span>Put request to update existing User details with valid inputs</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Put request to modify the Userskill record with valid inputs with endpoints as "/UserSkills/{id}" from given sheetname "Put" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then record is successfully updated with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="122"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to delete Userskill mappings</p>
+            <p class="text-sm">
+              <span>1:06:25 AM</span> / <span>00:00:00:438</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to delete Userskill mappings</h5>
+<span class='badge badge-success'>03.31.2022 1:06:25 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:25 AM</span>
+<span class='badge badge-default'>00:00:00:438</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=122</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="123"><span class="badge log pass-bg mr-2">Pass</span>Delete an existing User-Skill mapping detail</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="124"><span class="badge log pass-bg mr-2">Pass</span>Delete an existing User-Skill mapping detail</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Delete request with valid inputs with endpoints as "/UserSkills/{id}" from given sheetname "Delete" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then record is successfully deleted with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="130"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to get Userskill mappings for authorized user</p>
+            <p class="text-sm">
+              <span>1:06:25 AM</span> / <span>00:00:02:399</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to get Userskill mappings for authorized user</h5>
+<span class='badge badge-success'>03.31.2022 1:06:25 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:28 AM</span>
+<span class='badge badge-default'>00:00:02:399</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=130</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="131"><span class="badge log pass-bg mr-2">Pass</span>Get all UserSkill mappings</div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="StepDefinition.UserApiSteps.lms_api_is_up_and_running_for_authorized_user()">
+                <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserSkillApiSteps.user_sends_the_get_request_with_endpoints_as(java.lang.String)">
+                <span>When User sends the Get request with endpoints as "/UserSkills"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="StepDefinition.UserSkillApiSteps.api_should_return_all_userskill_mappings_with_success_status_code()">
+                <span>Then API should return all Userskill mappings with success status code</span>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="137"><span class="badge log pass-bg mr-2">Pass</span>Get mapping for specific userskill</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="138"><span class="badge log pass-bg mr-2">Pass</span>Get mapping for specific userskill</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Get request for specific userskill with endpoints as "/UserSkills/{id}" from given sheetname "Get" and rownumber 0</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then API should return specific userskill mapping with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="144"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to create Userskill mappings</p>
+            <p class="text-sm">
+              <span>1:06:28 AM</span> / <span>00:00:00:926</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to create Userskill mappings</h5>
+<span class='badge badge-success'>03.31.2022 1:06:28 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:29 AM</span>
+<span class='badge badge-default'>00:00:00:926</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=144</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="145"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new Userskill mapping</div>
+      </div>
+    </div>
+        <div class="scenario_outline collapse">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="146"><span class="badge log pass-bg mr-2">Pass</span>Post request to create new Userskill mapping</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 collapse">
+                  <div class="step pass-bg">
+                    <span>Given LMS API is up and running for authorized user</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>When User sends the Post request for new Userskill mapping with valid inputs from given sheetname "Post" and rownumber 0 and endpoints as "/UserSkills"</span>
+      <div>
+      </div>
+                  </div>
+                  <div class="step pass-bg">
+                    <span>Then New UsersSkill record is successfully created with success status code</span>
+      <div>
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="152"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">feature to update Userskill mappings</p>
+            <p class="text-sm">
+              <span>1:06:29 AM</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">feature to update Userskill mappings</h5>
+<span class='badge badge-success'>03.31.2022 1:06:29 AM</span>
+<span class='badge badge-danger'>03.31.2022 1:06:29 AM</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=152</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">4</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>6</span>
+</span>
+<p class="name">@Delete</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Delete</h4>
+<span status="pass" class='badge log pass-bg'>6 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='23'>Delete request to delete existing skill with valid input</a>
+<div class="">
+<span class="badge badge-default">Check Delete request to delete an existing Skill detail.Delete request to delete existing skill with valid input</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='22' id='24'>Delete request to delete existing skill with valid input</a>
+<div class="">
+<span class="badge badge-default">Check Delete request to delete an existing Skill detail.Delete request to delete existing skill with valid input</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='72' id='73'>Delete request to delete existing user with valid input</a>
+<div class="">
+<span class="badge badge-default">Check Delete request to delete an existing user detail.Delete request to delete existing user with valid input</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='72' id='74'>Delete request to delete existing user with valid input</a>
+<div class="">
+<span class="badge badge-default">Check Delete request to delete an existing user detail.Delete request to delete existing user with valid input</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='122' id='123'>Delete an existing User-Skill mapping detail</a>
+<div class="">
+<span class="badge badge-default">feature to delete Userskill mappings.Delete an existing User-Skill mapping detail</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='122' id='124'>Delete an existing User-Skill mapping detail</a>
+<div class="">
+<span class="badge badge-default">feature to delete Userskill mappings.Delete an existing User-Skill mapping detail</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>7</span>
+</span>
+<p class="name">@Put</p>
+<p class="duration text-sm">7 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Put</h4>
+<span status="pass" class='badge log pass-bg'>7 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='59'>Put request to update existing skill details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing skill details.Put request to update existing skill details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:17 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='60'>Put request to update existing skill details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing skill details.Put request to update existing skill details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:18 AM</td>
+<td>
+<a href="#" class="linked" test-id='58' id='66'>Put request to update existing skill details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing skill details.Put request to update existing skill details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='109'>Put request to update existing User details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing User details.Put request to update existing User details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:23 AM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='110'>Put request to update existing User details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing User details.Put request to update existing User details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:24 AM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='116'>Put request to update existing User details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing User details.Put request to update existing User details with valid inputs</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:29 AM</td>
+<td>
+<a href="#" class="linked" test-id='108' id='153'>Put request to update existing User details with valid inputs</a>
+<div class="">
+<span class="badge badge-default">Check Put request for existing User details.Put request to update existing User details with valid inputs</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>14</span>
+</span>
+<p class="name">@Get</p>
+<p class="duration text-sm">14 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Get</h4>
+<span status="pass" class='badge log pass-bg'>14 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:02 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>Get request to fetch List of all users with all skill details</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all UserSkillMapGetApi data.Get request to fetch List of all users with all skill details</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='8'>Get request to fetch List of user with the skill details by USER_ID</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all UserSkillMapGetApi data.Get request to fetch List of user with the skill details by USER_ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:09 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='9'>Get request to fetch List of user with the skill details by USER_ID</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all UserSkillMapGetApi data.Get request to fetch List of user with the skill details by USER_ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='15'>Get request to fetch List of all users details by SKILL_ID</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all UserSkillMapGetApi data.Get request to fetch List of all users details by SKILL_ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:12 AM</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>Get request to fetch List of all users details by SKILL_ID</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all UserSkillMapGetApi data.Get request to fetch List of all users details by SKILL_ID</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:14 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='31'>Get request to fetch all skill data</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all skill data.Get request to fetch all skill data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='37'>Get request to fetch specific skill data</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all skill data.Get request to fetch specific skill data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='30' id='38'>Get request to fetch specific skill data</a>
+<div class="">
+<span class="badge badge-default">Check the Get request to fetch all skill data.Get request to fetch specific skill data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:20 AM</td>
+<td>
+<a href="#" class="linked" test-id='80' id='81'>Get request to fetch all Users data</a>
+<div class="">
+<span class="badge badge-default">Check Get Request for User API.Get request to fetch all Users data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='80' id='87'>Get request to fetch specific User data</a>
+<div class="">
+<span class="badge badge-default">Check Get Request for User API.Get request to fetch specific User data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='80' id='88'>Get request to fetch specific User data</a>
+<div class="">
+<span class="badge badge-default">Check Get Request for User API.Get request to fetch specific User data</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:25 AM</td>
+<td>
+<a href="#" class="linked" test-id='130' id='131'>Get all UserSkill mappings</a>
+<div class="">
+<span class="badge badge-default">feature to get Userskill mappings for authorized user.Get all UserSkill mappings</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='130' id='137'>Get mapping for specific userskill</a>
+<div class="">
+<span class="badge badge-default">feature to get Userskill mappings for authorized user.Get mapping for specific userskill</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:26 AM</td>
+<td>
+<a href="#" class="linked" test-id='130' id='138'>Get mapping for specific userskill</a>
+<div class="">
+<span class="badge badge-default">feature to get Userskill mappings for authorized user.Get mapping for specific userskill</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>8</span>
+</span>
+<p class="name">@Post</p>
+<p class="duration text-sm">8 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@Post</h4>
+<span status="pass" class='badge log pass-bg'>8 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='44' id='45'>Post request to create new Skill</a>
+<div class="">
+<span class="badge badge-default">Check Post request for Skill API.Post request to create new Skill</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:15 AM</td>
+<td>
+<a href="#" class="linked" test-id='44' id='46'>Post request to create new Skill</a>
+<div class="">
+<span class="badge badge-default">Check Post request for Skill API.Post request to create new Skill</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:16 AM</td>
+<td>
+<a href="#" class="linked" test-id='44' id='52'>Post request to create new Skill</a>
+<div class="">
+<span class="badge badge-default">Check Post request for Skill API.Post request to create new Skill</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='95'>Post request to create new User</a>
+<div class="">
+<span class="badge badge-default">Check Post request for User API.Post request to create new User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:21 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='96'>Post request to create new User</a>
+<div class="">
+<span class="badge badge-default">Check Post request for User API.Post request to create new User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:22 AM</td>
+<td>
+<a href="#" class="linked" test-id='94' id='102'>Post request to create new User</a>
+<div class="">
+<span class="badge badge-default">Check Post request for User API.Post request to create new User</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='144' id='145'>Post request to create new Userskill mapping</a>
+<div class="">
+<span class="badge badge-default">feature to create Userskill mappings.Post request to create new Userskill mapping</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>01:06:28 AM</td>
+<td>
+<a href="#" class="linked" test-id='144' id='146'>Post request to create new Userskill mapping</a>
+<div class="">
+<span class="badge badge-default">feature to create Userskill mappings.Post request to create new Userskill mapping</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Mar 31, 2022 01:06:00 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Mar 31, 2022 01:06:30 AM</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>13</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>0</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'>
+<b>13</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='0%'><b>0</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>22</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='100%'><b>66</b> steps passed</small></div>
+<div>
+<small data-tooltip='0%'><b>0</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Check the Get request to fetch all UserSkillMapGetApi data":10.314,"Check Delete request to delete an existing Skill detail":1.388,"Check the Get request to fetch all skill data":1.416,"Check Post request for Skill API":1.983,"Check Put request for existing skill details":2.743,"Check Delete request to delete an existing user detail":0.561,"Check Get Request for User API":0.934,"Check Post request for User API":1.736,"Check Put request for existing User details":6.718,"feature to delete Userskill mappings":0.438,"feature to get Userskill mappings for authorized user":2.399,"feature to create Userskill mappings":0.926,"feature to update Userskill mappings":0
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@Delete</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Put</td>
+<td>7</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Get</td>
+<td>14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@Post</td>
+<td>8</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 13,
+failParent: 0,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 22,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 66,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
